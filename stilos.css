@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    --font-family-Big: 'Big Shoulders Display', sans-serif;
+    --font-family-Deca: 'Lexend Deca', sans-serif;
+}
+body{
+    font-size: 15px;
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container{
+    width: 55%;
+    display: flex;
+}
+
+.card{
+    padding: 50px;
+}
+.card_logo{
+    margin-bottom: 30px;
+}
+.titulo{
+    font-family: var(--font-family-Big);
+    font-size: 3em;
+    color: var(--Very-light-gray);
+    margin-bottom: 30px;
+}
+.parrafo{
+    font-family: var(--font-family-Deca);
+    color: var(--Transparent-white);
+    line-height: 1.5;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.cta{
+    display: inline-block;
+    background-color: var(--Very-light-gray);
+    font-family: var(--font-family-Deca);
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 50px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid var(--Very-light-gray);
+}
+.cta:hover{
+    color:var(--Very-light-gray) ;
+}
+
+
+.section1{
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cta-1{
+    color: var(--Bright-orange);
+}
+.cta-1:hover{
+    background-color: var(--Bright-orange);
+}
+.section2{
+    background-color: var(--Dark-cyan);
+}
+.cta-2{
+    color: var(--Dark-cyan);
+}
+.cta-2:hover{
+    background-color: var(--Dark-cyan);
+}
+.section3{
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cta-3{
+    color: var(--Very-dark-cyan);
+}
+.cta-3:hover{
+    background-color: var(--Very-dark-cyan);
+}
+@media(max-width:800px){
+    .main_container{
+        width: 100%;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafo{
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .section1{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .section3{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
